@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue:  hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --some-dark-blue: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: "Outfit", sans-serif; 
+    overflow-x: hidden;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 330px;
+    height: 550px;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.container .image .main-img {
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.container .content h2 {
+    color: #fff;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.container .content h2:hover,
+.container .content .footer-box p span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.container .content p {
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin-bottom: 20px;
+}
+
+.container .content .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .price .eth {
+    color: var(--cyan);
+
+}
+
+.container .content .price p img {
+    transform:translateY(2px);
+    margin: 0 5px;
+}
+
+hr {
+   opacity: 0.2;
+}
+
+.container .content .footer-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .content .footer-box img {
+    border: #fff 1px solid;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.container .content .footer-box p {
+    transform: translate(0, 10px);
+    margin-left: 10px;
+}
+
+.container .content .footer-box p span {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+    }
+
+
+
+    .container .content .price .eth {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .container .image .main-img {
+        height: 200px;
+    }
+
+}
