@@ -106,13 +106,11 @@ hr {
         width: 90%;
         margin: auto;
         padding: 15px;
+        height: 500px;
     }
 
 
 
-    .container .content .price .eth {
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 400px) {
